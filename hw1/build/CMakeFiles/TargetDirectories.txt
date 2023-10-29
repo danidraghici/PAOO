@@ -1,0 +1,3 @@
+/home/daniela/PAOO_LAB/PAOO/hw1/build/CMakeFiles/MyExecutable.dir
+/home/daniela/PAOO_LAB/PAOO/hw1/build/CMakeFiles/edit_cache.dir
+/home/daniela/PAOO_LAB/PAOO/hw1/build/CMakeFiles/rebuild_cache.dir
