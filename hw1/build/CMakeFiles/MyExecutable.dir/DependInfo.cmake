@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/daniela/PAOO_LAB/PAOO/hw1/src/main.cpp" "CMakeFiles/MyExecutable.dir/src/main.cpp.o" "gcc" "CMakeFiles/MyExecutable.dir/src/main.cpp.o.d"
+  "/home/daniela/PAOO_LAB/PAOO/hw1/src/masini.cpp" "CMakeFiles/MyExecutable.dir/src/masini.cpp.o" "gcc" "CMakeFiles/MyExecutable.dir/src/masini.cpp.o.d"
   )
 
 # Targets to which this target links.

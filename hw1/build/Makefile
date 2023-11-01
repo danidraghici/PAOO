@@ -153,6 +153,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/masini.o: src/masini.cpp.o
+.PHONY : src/masini.o
+
+# target to build an object file
+src/masini.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/masini.cpp.o
+.PHONY : src/masini.cpp.o
+
+src/masini.i: src/masini.cpp.i
+.PHONY : src/masini.i
+
+# target to preprocess a source file
+src/masini.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/masini.cpp.i
+.PHONY : src/masini.cpp.i
+
+src/masini.s: src/masini.cpp.s
+.PHONY : src/masini.s
+
+# target to generate assembly for a file
+src/masini.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/masini.cpp.s
+.PHONY : src/masini.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +189,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/masini.o"
+	@echo "... src/masini.i"
+	@echo "... src/masini.s"
 .PHONY : help
 
 
