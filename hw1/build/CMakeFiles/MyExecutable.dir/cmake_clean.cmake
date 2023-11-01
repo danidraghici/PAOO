@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/MyExecutable.dir/src/main.cpp.o"
   "CMakeFiles/MyExecutable.dir/src/main.cpp.o.d"
+  "CMakeFiles/MyExecutable.dir/src/masini.cpp.o"
+  "CMakeFiles/MyExecutable.dir/src/masini.cpp.o.d"
   "MyExecutable"
   "MyExecutable.pdb"
 )
