@@ -6,19 +6,17 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-# Set the source directory
-set(SRC_DIR ${CMAKE_SOURCE_DIR}/src)
 
-# Set the binary directory
-set(BIN_DIR ${CMAKE_SOURCE_DIR}/build)
+# Create the build directory (if it doesn't exist) and set it as the build location.
+if(NOT EXISTS ${CMAKE_BINARY_DIR}/CMakeFiles)
+    file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR})
+endif()
 
-# Add the source files to the project
-file(GLOB SOURCES ${SRC_DIR}/*.cpp)
+set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/build)
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 
-# Specify the executable and its source files
-add_executable(MyExecutable ${SOURCES})
+add_subdirectory(src)
 
-# Set the output directory for the executable
-set_target_properties(MyExecutable PROPERTIES
-    RUNTIME_OUTPUT_DIRECTORY ${BIN_DIR}
-)
+
+
+

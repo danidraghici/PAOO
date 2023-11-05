@@ -1,4 +1,4 @@
-CMakeFiles/MyExecutable.dir/src/main.cpp.o: \
+src/CMakeFiles/MyExecutable.dir/main.cpp.o: \
  /home/daniela/PAOO_LAB/PAOO/hw1/src/main.cpp /usr/include/stdc-predef.h \
  /home/daniela/PAOO_LAB/PAOO/hw1/src/masini.hpp \
  /usr/include/c++/11/string \
