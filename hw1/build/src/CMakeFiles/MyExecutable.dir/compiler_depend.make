@@ -4,6 +4,8 @@
 src/CMakeFiles/MyExecutable.dir/main.cpp.o: ../src/main.cpp \
   /usr/include/stdc-predef.h \
   ../src/masini.hpp \
+  ../src/vehicul.hpp \
+  ../src/ivehicul.hpp \
   /usr/include/c++/11/string \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -183,6 +185,8 @@ src/CMakeFiles/MyExecutable.dir/main.cpp.o: ../src/main.cpp \
 src/CMakeFiles/MyExecutable.dir/masini.cpp.o: ../src/masini.cpp \
   /usr/include/stdc-predef.h \
   ../src/masini.hpp \
+  ../src/vehicul.hpp \
+  ../src/ivehicul.hpp \
   /usr/include/c++/11/string \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -362,6 +366,12 @@ src/CMakeFiles/MyExecutable.dir/masini.cpp.o: ../src/masini.cpp \
   /usr/include/string.h \
   /usr/include/strings.h
 
+src/CMakeFiles/MyExecutable.dir/vehicul.cpp.o: ../src/vehicul.cpp \
+  /usr/include/stdc-predef.h \
+  ../src/vehicul.hpp
+
+
+../src/vehicul.cpp:
 
 /usr/include/string.h:
 
@@ -439,8 +449,6 @@ src/CMakeFiles/MyExecutable.dir/masini.cpp.o: ../src/masini.cpp \
 
 /usr/include/alloca.h:
 
-/usr/include/c++/11/cctype:
-
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
@@ -473,11 +481,25 @@ src/CMakeFiles/MyExecutable.dir/masini.cpp.o: ../src/masini.cpp \
 
 /usr/include/stdint.h:
 
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
+/usr/include/c++/11/cstdint:
 
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+/usr/include/x86_64-linux-gnu/bits/sched.h:
 
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
+
+/usr/include/ctype.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/include/c++/11/ios:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
@@ -485,15 +507,13 @@ src/CMakeFiles/MyExecutable.dir/masini.cpp.o: ../src/masini.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+/usr/include/c++/11/debug/assertions.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
@@ -507,29 +527,19 @@ src/CMakeFiles/MyExecutable.dir/masini.cpp.o: ../src/masini.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
-/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
 
-/usr/include/c++/11/debug/assertions.h:
-
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/c++/11/ios:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/c++/11/bits/cxxabi_init_exception.h:
 
 /usr/include/wchar.h:
 
 ../src/masini.hpp:
+
+../src/vehicul.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
@@ -548,6 +558,16 @@ src/CMakeFiles/MyExecutable.dir/masini.cpp.o: ../src/masini.cpp \
 /usr/include/c++/11/bits/ostream_insert.h:
 
 ../src/main.cpp:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
@@ -619,23 +639,21 @@ src/CMakeFiles/MyExecutable.dir/masini.cpp.o: ../src/masini.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
 
+../src/ivehicul.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
 /usr/include/stdc-predef.h:
 
 /usr/include/c++/11/bits/stl_function.h:
 
-/usr/include/c++/11/cstdint:
+/usr/include/x86_64-linux-gnu/bits/types.h:
 
-/usr/include/x86_64-linux-gnu/bits/sched.h:
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
-
-/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
-
-/usr/include/ctype.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+/usr/include/c++/11/cctype:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
@@ -680,10 +698,6 @@ src/CMakeFiles/MyExecutable.dir/masini.cpp.o: ../src/masini.cpp \
 /usr/include/c++/11/ext/atomicity.h:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 

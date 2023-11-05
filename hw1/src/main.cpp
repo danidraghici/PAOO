@@ -2,15 +2,18 @@
 #include <iostream>
 
 int main() {
-    Masina masina("Masina1", 2020);
+    MasinaNamespace::Masina masina("Masina1", 2020, 4, true);
 
-    Masina masina2 = masina; // Copy constructor
+    MasinaNamespace::Masina masina2 = masina; // Copy constructor
 
-    Masina masina3("Masina2", 2019);
+    MasinaNamespace::Masina masina3("Masina2", 2019, 4, true);
     masina3 = masina; // Assignment operator
 
 
-    std::cout << "Masina: " << masina.GetMarca() << ", An: " << masina.GetAn() << std::endl;
+    std::cout << "Masina: " << masina.GetMarca() << ", An: " << masina.GetAn() << ", Numar roti: " << masina.GetNumarRoti() << ", are motor: " << masina.AreMotor() << std::endl;
+    
+    MasinaNamespace::Masina masina4 = std::move(masina);
+    std::cout << "Masina: " << masina4.GetMarca() << ", An: " << masina4.GetAn() << ", Numar roti: " << masina4.GetNumarRoti() << ", are motor: " << masina4.AreMotor() << std::endl;
 
     return 0;
 }

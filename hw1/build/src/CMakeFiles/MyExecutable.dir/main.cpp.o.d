@@ -1,6 +1,8 @@
 src/CMakeFiles/MyExecutable.dir/main.cpp.o: \
  /home/daniela/PAOO_LAB/PAOO/hw1/src/main.cpp /usr/include/stdc-predef.h \
  /home/daniela/PAOO_LAB/PAOO/hw1/src/masini.hpp \
+ /home/daniela/PAOO_LAB/PAOO/hw1/src/vehicul.hpp \
+ /home/daniela/PAOO_LAB/PAOO/hw1/src/ivehicul.hpp \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
