@@ -1,4 +1,5 @@
 #include "masini.hpp"
+#include <iostream>
 #include <cstring> // strlen, strcpy, etc.
 
 Masina::Masina(const char* marca, int an) : an(an) {
@@ -16,7 +17,7 @@ Masina& Masina::operator=(const Masina& masina) {
         return *this;
     }
 
-    delete[] marca;
+    delete[] marca;         
     an = masina.an;
     marca = new char[strlen(masina.marca) + 1];
     strcpy(marca, masina.marca);
@@ -26,6 +27,8 @@ Masina& Masina::operator=(const Masina& masina) {
 
 Masina::~Masina() {
     delete[] marca;
+    std::cout << "Masina distrusa " << std::endl;
+
 }
 
 const char* Masina::GetMarca() const {
