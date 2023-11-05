@@ -1,17 +1,23 @@
 #pragma once
+#include "vehicul.hpp"
 #include <string>
 
-class Masina {
-private:
-    char* marca;
-    int an;
+namespace MasinaNamespace {
+    class Masina : public VehiculNamespace::Vehicul {
+    private:
+        char* marca;
+        int an;
+        int numarRoti;
 
-public:
-    Masina(const char* marca, int an);
-    Masina(const Masina& masina);
-    Masina& operator=(const Masina& masina);
-    ~Masina();
+    public:
+        Masina(const char* marca, int an, int numarRoti, bool areMotor);
+        Masina(const Masina& masina);
+        Masina& operator=(const Masina& masina);
+        Masina(Masina&& masina) noexcept;
+        ~Masina();
 
-    const char* GetMarca() const;
-    int GetAn() const;
-};
+        const char* GetMarca() const;
+        int GetAn() const;
+        int GetNumarRoti() const override; // Implementarea metodei virtuale
+    };
+}

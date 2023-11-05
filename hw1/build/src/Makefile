@@ -178,6 +178,30 @@ masini.cpp.s:
 	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyExecutable.dir/build.make src/CMakeFiles/MyExecutable.dir/masini.cpp.s
 .PHONY : masini.cpp.s
 
+vehicul.o: vehicul.cpp.o
+.PHONY : vehicul.o
+
+# target to build an object file
+vehicul.cpp.o:
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyExecutable.dir/build.make src/CMakeFiles/MyExecutable.dir/vehicul.cpp.o
+.PHONY : vehicul.cpp.o
+
+vehicul.i: vehicul.cpp.i
+.PHONY : vehicul.i
+
+# target to preprocess a source file
+vehicul.cpp.i:
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyExecutable.dir/build.make src/CMakeFiles/MyExecutable.dir/vehicul.cpp.i
+.PHONY : vehicul.cpp.i
+
+vehicul.s: vehicul.cpp.s
+.PHONY : vehicul.s
+
+# target to generate assembly for a file
+vehicul.cpp.s:
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyExecutable.dir/build.make src/CMakeFiles/MyExecutable.dir/vehicul.cpp.s
+.PHONY : vehicul.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -193,6 +217,9 @@ help:
 	@echo "... masini.o"
 	@echo "... masini.i"
 	@echo "... masini.s"
+	@echo "... vehicul.o"
+	@echo "... vehicul.i"
+	@echo "... vehicul.s"
 .PHONY : help
 
 

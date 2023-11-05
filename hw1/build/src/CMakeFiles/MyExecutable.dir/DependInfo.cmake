@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/daniela/PAOO_LAB/PAOO/hw1/src/main.cpp" "src/CMakeFiles/MyExecutable.dir/main.cpp.o" "gcc" "src/CMakeFiles/MyExecutable.dir/main.cpp.o.d"
   "/home/daniela/PAOO_LAB/PAOO/hw1/src/masini.cpp" "src/CMakeFiles/MyExecutable.dir/masini.cpp.o" "gcc" "src/CMakeFiles/MyExecutable.dir/masini.cpp.o.d"
+  "/home/daniela/PAOO_LAB/PAOO/hw1/src/vehicul.cpp" "src/CMakeFiles/MyExecutable.dir/vehicul.cpp.o" "gcc" "src/CMakeFiles/MyExecutable.dir/vehicul.cpp.o.d"
   )
 
 # Targets to which this target links.
