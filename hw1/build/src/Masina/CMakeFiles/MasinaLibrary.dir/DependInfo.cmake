@@ -8,13 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/daniela/PAOO_LAB/PAOO/hw1/src/main.cpp" "src/CMakeFiles/MyExecutable.dir/main.cpp.o" "gcc" "src/CMakeFiles/MyExecutable.dir/main.cpp.o.d"
+  "/home/daniela/PAOO_LAB/PAOO/hw1/src/Masina/masini.cpp" "src/Masina/CMakeFiles/MasinaLibrary.dir/masini.cpp.o" "gcc" "src/Masina/CMakeFiles/MasinaLibrary.dir/masini.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/daniela/PAOO_LAB/PAOO/hw1/build/src/Masina/CMakeFiles/MasinaLibrary.dir/DependInfo.cmake"
-  "/home/daniela/PAOO_LAB/PAOO/hw1/build/src/Vehicul/CMakeFiles/VehiculLibrary.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

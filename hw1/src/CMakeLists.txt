@@ -1,16 +1,14 @@
-cmake_minimum_required(VERSION 3.10)
-
-
-set(CMAKE_CXX_STANDARD 14)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
-set(CMAKE_CXX_EXTENSIONS OFF)
-
-
-# Set the source directory
-set(SRC_DIR ${CMAKE_SOURCE_DIR}/src) # setam folderul sursa 
-
-# Add the source files to the project
-file(GLOB SOURCES ${SRC_DIR}/*.cpp) # identifica toate fisierele sursa pentru a le compila 
+add_subdirectory(Masina)
+add_subdirectory(Vehicul)
 
 # Specify the executable and its source files
-add_executable(MyExecutable ${SOURCES}) 
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
+add_executable(MyExecutable main.cpp) 
+
+# Link MasinaLibrary and VehiculLibrary to the executable
+target_link_libraries(MyExecutable PUBLIC MasinaLibrary VehiculLibrary)
+
+# Include the header files from MasinaLibrary and VehiculLibrary
+target_include_directories(MyExecutable PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/Masina)
+target_include_directories(MyExecutable PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/Vehicul)
+target_include_directories(MyExecutable PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/IVehicul)

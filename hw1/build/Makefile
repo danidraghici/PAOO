@@ -129,6 +129,32 @@ MyExecutable/fast:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyExecutable.dir/build.make src/CMakeFiles/MyExecutable.dir/build
 .PHONY : MyExecutable/fast
 
+#=============================================================================
+# Target rules for targets named MasinaLibrary
+
+# Build rule for target.
+MasinaLibrary: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MasinaLibrary
+.PHONY : MasinaLibrary
+
+# fast build rule for target.
+MasinaLibrary/fast:
+	$(MAKE) $(MAKESILENT) -f src/Masina/CMakeFiles/MasinaLibrary.dir/build.make src/Masina/CMakeFiles/MasinaLibrary.dir/build
+.PHONY : MasinaLibrary/fast
+
+#=============================================================================
+# Target rules for targets named VehiculLibrary
+
+# Build rule for target.
+VehiculLibrary: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 VehiculLibrary
+.PHONY : VehiculLibrary
+
+# fast build rule for target.
+VehiculLibrary/fast:
+	$(MAKE) $(MAKESILENT) -f src/Vehicul/CMakeFiles/VehiculLibrary.dir/build.make src/Vehicul/CMakeFiles/VehiculLibrary.dir/build
+.PHONY : VehiculLibrary/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -137,7 +163,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... MasinaLibrary"
 	@echo "... MyExecutable"
+	@echo "... VehiculLibrary"
 .PHONY : help
 
 

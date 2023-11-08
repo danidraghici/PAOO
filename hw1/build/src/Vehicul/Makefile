@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/daniela/PAOO_LAB/PAOO/hw1/build/CMakeFiles /home/daniela/PAOO_LAB/PAOO/hw1/build/src//CMakeFiles/progress.marks
-	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/daniela/PAOO_LAB/PAOO/hw1/build/CMakeFiles /home/daniela/PAOO_LAB/PAOO/hw1/build/src/Vehicul//CMakeFiles/progress.marks
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Vehicul/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniela/PAOO_LAB/PAOO/hw1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Vehicul/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,12 +103,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Vehicul/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Vehicul/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -117,42 +117,42 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/MyExecutable.dir/rule:
-	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/MyExecutable.dir/rule
-.PHONY : src/CMakeFiles/MyExecutable.dir/rule
+src/Vehicul/CMakeFiles/VehiculLibrary.dir/rule:
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Vehicul/CMakeFiles/VehiculLibrary.dir/rule
+.PHONY : src/Vehicul/CMakeFiles/VehiculLibrary.dir/rule
 
 # Convenience name for target.
-MyExecutable: src/CMakeFiles/MyExecutable.dir/rule
-.PHONY : MyExecutable
+VehiculLibrary: src/Vehicul/CMakeFiles/VehiculLibrary.dir/rule
+.PHONY : VehiculLibrary
 
 # fast build rule for target.
-MyExecutable/fast:
-	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyExecutable.dir/build.make src/CMakeFiles/MyExecutable.dir/build
-.PHONY : MyExecutable/fast
+VehiculLibrary/fast:
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f src/Vehicul/CMakeFiles/VehiculLibrary.dir/build.make src/Vehicul/CMakeFiles/VehiculLibrary.dir/build
+.PHONY : VehiculLibrary/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+vehicul.o: vehicul.cpp.o
+.PHONY : vehicul.o
 
 # target to build an object file
-main.cpp.o:
-	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyExecutable.dir/build.make src/CMakeFiles/MyExecutable.dir/main.cpp.o
-.PHONY : main.cpp.o
+vehicul.cpp.o:
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f src/Vehicul/CMakeFiles/VehiculLibrary.dir/build.make src/Vehicul/CMakeFiles/VehiculLibrary.dir/vehicul.cpp.o
+.PHONY : vehicul.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+vehicul.i: vehicul.cpp.i
+.PHONY : vehicul.i
 
 # target to preprocess a source file
-main.cpp.i:
-	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyExecutable.dir/build.make src/CMakeFiles/MyExecutable.dir/main.cpp.i
-.PHONY : main.cpp.i
+vehicul.cpp.i:
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f src/Vehicul/CMakeFiles/VehiculLibrary.dir/build.make src/Vehicul/CMakeFiles/VehiculLibrary.dir/vehicul.cpp.i
+.PHONY : vehicul.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+vehicul.s: vehicul.cpp.s
+.PHONY : vehicul.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyExecutable.dir/build.make src/CMakeFiles/MyExecutable.dir/main.cpp.s
-.PHONY : main.cpp.s
+vehicul.cpp.s:
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f src/Vehicul/CMakeFiles/VehiculLibrary.dir/build.make src/Vehicul/CMakeFiles/VehiculLibrary.dir/vehicul.cpp.s
+.PHONY : vehicul.cpp.s
 
 # Help Target
 help:
@@ -162,10 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... MyExecutable"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... VehiculLibrary"
+	@echo "... vehicul.o"
+	@echo "... vehicul.i"
+	@echo "... vehicul.s"
 .PHONY : help
 
 
