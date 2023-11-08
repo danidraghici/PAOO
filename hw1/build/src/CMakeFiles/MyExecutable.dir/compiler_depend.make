@@ -3,9 +3,9 @@
 
 src/CMakeFiles/MyExecutable.dir/main.cpp.o: ../src/main.cpp \
   /usr/include/stdc-predef.h \
-  ../src/masini.hpp \
-  ../src/vehicul.hpp \
-  ../src/ivehicul.hpp \
+  ../src/Masina/masini.hpp \
+  ../src/Vehicul/vehicul.hpp \
+  ../src/IVehicul/ivehicul.hpp \
   /usr/include/c++/11/string \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -185,8 +185,6 @@ src/CMakeFiles/MyExecutable.dir/main.cpp.o: ../src/main.cpp \
 
 /usr/include/c++/11/bits/istream.tcc:
 
-/usr/include/c++/11/istream:
-
 /usr/include/c++/11/bits/basic_ios.tcc:
 
 /usr/include/c++/11/bits/locale_facets.tcc:
@@ -253,8 +251,6 @@ src/CMakeFiles/MyExecutable.dir/main.cpp.o: ../src/main.cpp \
 
 /usr/include/alloca.h:
 
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
@@ -262,6 +258,10 @@ src/CMakeFiles/MyExecutable.dir/main.cpp.o: ../src/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/usr/include/c++/11/bits/cxxabi_init_exception.h:
+
+/usr/include/wchar.h:
 
 /usr/include/c++/11/bits/predefined_ops.h:
 
@@ -311,13 +311,11 @@ src/CMakeFiles/MyExecutable.dir/main.cpp.o: ../src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
-/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
 
-/usr/include/c++/11/debug/assertions.h:
-
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
@@ -331,19 +329,23 @@ src/CMakeFiles/MyExecutable.dir/main.cpp.o: ../src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+/usr/include/c++/11/debug/assertions.h:
 
-/usr/include/c++/11/bits/cxxabi_init_exception.h:
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/usr/include/wchar.h:
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
 
-../src/masini.hpp:
+/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
 
-../src/vehicul.hpp:
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/include/c++/11/istream:
+
+../src/Masina/masini.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
@@ -365,13 +367,11 @@ src/CMakeFiles/MyExecutable.dir/main.cpp.o: ../src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
+../src/IVehicul/ivehicul.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
@@ -443,12 +443,6 @@ src/CMakeFiles/MyExecutable.dir/main.cpp.o: ../src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
 
-../src/ivehicul.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
 /usr/include/stdc-predef.h:
 
 /usr/include/c++/11/bits/stl_function.h:
@@ -502,6 +496,12 @@ src/CMakeFiles/MyExecutable.dir/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/11/ext/atomicity.h:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+../src/Vehicul/vehicul.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 

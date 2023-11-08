@@ -29,8 +29,8 @@ Masina& Masina::operator=(const Masina& masina) {
 }
 
 Masina::Masina(Masina&& masina) noexcept : VehiculNamespace::Vehicul(masina.AreMotor()), an(masina.an), numarRoti(masina.numarRoti) {
-    marca = masina.marca;
-    masina.marca = nullptr;  // Marca va fi preluată de obiectul curent, iar obiectul sursă va fi lăsat cu nullptr pentru a preveni ștergerea acesteia în destructorul obiectului sursă.
+    this->marca = std::move(masina.marca);
+    masina.marca = nullptr;  
     std::cout << "Move constructor apelat" << std::endl;
 }
 
