@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/daniela/PAOO_LAB/PAOO/hw1/build/CMakeFiles /home/daniela/PAOO_LAB/PAOO/hw1/build/src//CMakeFiles/progress.marks
-	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/daniela/PAOO_LAB/PAOO/hw1/build/CMakeFiles /home/daniela/PAOO_LAB/PAOO/hw1/build/src/Masina//CMakeFiles/progress.marks
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Masina/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniela/PAOO_LAB/PAOO/hw1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Masina/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,12 +103,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Masina/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Masina/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -117,42 +117,42 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/MyExecutable.dir/rule:
-	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/MyExecutable.dir/rule
-.PHONY : src/CMakeFiles/MyExecutable.dir/rule
+src/Masina/CMakeFiles/MasinaLibrary.dir/rule:
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Masina/CMakeFiles/MasinaLibrary.dir/rule
+.PHONY : src/Masina/CMakeFiles/MasinaLibrary.dir/rule
 
 # Convenience name for target.
-MyExecutable: src/CMakeFiles/MyExecutable.dir/rule
-.PHONY : MyExecutable
+MasinaLibrary: src/Masina/CMakeFiles/MasinaLibrary.dir/rule
+.PHONY : MasinaLibrary
 
 # fast build rule for target.
-MyExecutable/fast:
-	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyExecutable.dir/build.make src/CMakeFiles/MyExecutable.dir/build
-.PHONY : MyExecutable/fast
+MasinaLibrary/fast:
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f src/Masina/CMakeFiles/MasinaLibrary.dir/build.make src/Masina/CMakeFiles/MasinaLibrary.dir/build
+.PHONY : MasinaLibrary/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+masini.o: masini.cpp.o
+.PHONY : masini.o
 
 # target to build an object file
-main.cpp.o:
-	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyExecutable.dir/build.make src/CMakeFiles/MyExecutable.dir/main.cpp.o
-.PHONY : main.cpp.o
+masini.cpp.o:
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f src/Masina/CMakeFiles/MasinaLibrary.dir/build.make src/Masina/CMakeFiles/MasinaLibrary.dir/masini.cpp.o
+.PHONY : masini.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+masini.i: masini.cpp.i
+.PHONY : masini.i
 
 # target to preprocess a source file
-main.cpp.i:
-	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyExecutable.dir/build.make src/CMakeFiles/MyExecutable.dir/main.cpp.i
-.PHONY : main.cpp.i
+masini.cpp.i:
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f src/Masina/CMakeFiles/MasinaLibrary.dir/build.make src/Masina/CMakeFiles/MasinaLibrary.dir/masini.cpp.i
+.PHONY : masini.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+masini.s: masini.cpp.s
+.PHONY : masini.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyExecutable.dir/build.make src/CMakeFiles/MyExecutable.dir/main.cpp.s
-.PHONY : main.cpp.s
+masini.cpp.s:
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f src/Masina/CMakeFiles/MasinaLibrary.dir/build.make src/Masina/CMakeFiles/MasinaLibrary.dir/masini.cpp.s
+.PHONY : masini.cpp.s
 
 # Help Target
 help:
@@ -162,10 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... MyExecutable"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... MasinaLibrary"
+	@echo "... masini.o"
+	@echo "... masini.i"
+	@echo "... masini.s"
 .PHONY : help
 
 

@@ -79,29 +79,65 @@ clean: src/clean
 
 # Recursive "all" directory target.
 src/all: src/CMakeFiles/MyExecutable.dir/all
+src/all: src/Masina/all
+src/all: src/Vehicul/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
-src/preinstall:
+src/preinstall: src/Masina/preinstall
+src/preinstall: src/Vehicul/preinstall
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
 src/clean: src/CMakeFiles/MyExecutable.dir/clean
+src/clean: src/Masina/clean
+src/clean: src/Vehicul/clean
 .PHONY : src/clean
+
+#=============================================================================
+# Directory level rules for directory src/Masina
+
+# Recursive "all" directory target.
+src/Masina/all: src/Masina/CMakeFiles/MasinaLibrary.dir/all
+.PHONY : src/Masina/all
+
+# Recursive "preinstall" directory target.
+src/Masina/preinstall:
+.PHONY : src/Masina/preinstall
+
+# Recursive "clean" directory target.
+src/Masina/clean: src/Masina/CMakeFiles/MasinaLibrary.dir/clean
+.PHONY : src/Masina/clean
+
+#=============================================================================
+# Directory level rules for directory src/Vehicul
+
+# Recursive "all" directory target.
+src/Vehicul/all: src/Vehicul/CMakeFiles/VehiculLibrary.dir/all
+.PHONY : src/Vehicul/all
+
+# Recursive "preinstall" directory target.
+src/Vehicul/preinstall:
+.PHONY : src/Vehicul/preinstall
+
+# Recursive "clean" directory target.
+src/Vehicul/clean: src/Vehicul/CMakeFiles/VehiculLibrary.dir/clean
+.PHONY : src/Vehicul/clean
 
 #=============================================================================
 # Target rules for target src/CMakeFiles/MyExecutable.dir
 
 # All Build rule for target.
-src/CMakeFiles/MyExecutable.dir/all:
+src/CMakeFiles/MyExecutable.dir/all: src/Masina/CMakeFiles/MasinaLibrary.dir/all
+src/CMakeFiles/MyExecutable.dir/all: src/Vehicul/CMakeFiles/VehiculLibrary.dir/all
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyExecutable.dir/build.make src/CMakeFiles/MyExecutable.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyExecutable.dir/build.make src/CMakeFiles/MyExecutable.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/daniela/PAOO_LAB/PAOO/hw1/build/CMakeFiles --progress-num=1,2,3,4 "Built target MyExecutable"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/daniela/PAOO_LAB/PAOO/hw1/build/CMakeFiles --progress-num=3,4 "Built target MyExecutable"
 .PHONY : src/CMakeFiles/MyExecutable.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/MyExecutable.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniela/PAOO_LAB/PAOO/hw1/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniela/PAOO_LAB/PAOO/hw1/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/MyExecutable.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniela/PAOO_LAB/PAOO/hw1/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/MyExecutable.dir/rule
@@ -114,6 +150,58 @@ MyExecutable: src/CMakeFiles/MyExecutable.dir/rule
 src/CMakeFiles/MyExecutable.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyExecutable.dir/build.make src/CMakeFiles/MyExecutable.dir/clean
 .PHONY : src/CMakeFiles/MyExecutable.dir/clean
+
+#=============================================================================
+# Target rules for target src/Masina/CMakeFiles/MasinaLibrary.dir
+
+# All Build rule for target.
+src/Masina/CMakeFiles/MasinaLibrary.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/Masina/CMakeFiles/MasinaLibrary.dir/build.make src/Masina/CMakeFiles/MasinaLibrary.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/Masina/CMakeFiles/MasinaLibrary.dir/build.make src/Masina/CMakeFiles/MasinaLibrary.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/daniela/PAOO_LAB/PAOO/hw1/build/CMakeFiles --progress-num=1,2 "Built target MasinaLibrary"
+.PHONY : src/Masina/CMakeFiles/MasinaLibrary.dir/all
+
+# Build rule for subdir invocation for target.
+src/Masina/CMakeFiles/MasinaLibrary.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniela/PAOO_LAB/PAOO/hw1/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Masina/CMakeFiles/MasinaLibrary.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniela/PAOO_LAB/PAOO/hw1/build/CMakeFiles 0
+.PHONY : src/Masina/CMakeFiles/MasinaLibrary.dir/rule
+
+# Convenience name for target.
+MasinaLibrary: src/Masina/CMakeFiles/MasinaLibrary.dir/rule
+.PHONY : MasinaLibrary
+
+# clean rule for target.
+src/Masina/CMakeFiles/MasinaLibrary.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/Masina/CMakeFiles/MasinaLibrary.dir/build.make src/Masina/CMakeFiles/MasinaLibrary.dir/clean
+.PHONY : src/Masina/CMakeFiles/MasinaLibrary.dir/clean
+
+#=============================================================================
+# Target rules for target src/Vehicul/CMakeFiles/VehiculLibrary.dir
+
+# All Build rule for target.
+src/Vehicul/CMakeFiles/VehiculLibrary.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/Vehicul/CMakeFiles/VehiculLibrary.dir/build.make src/Vehicul/CMakeFiles/VehiculLibrary.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/Vehicul/CMakeFiles/VehiculLibrary.dir/build.make src/Vehicul/CMakeFiles/VehiculLibrary.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/daniela/PAOO_LAB/PAOO/hw1/build/CMakeFiles --progress-num=5,6 "Built target VehiculLibrary"
+.PHONY : src/Vehicul/CMakeFiles/VehiculLibrary.dir/all
+
+# Build rule for subdir invocation for target.
+src/Vehicul/CMakeFiles/VehiculLibrary.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniela/PAOO_LAB/PAOO/hw1/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Vehicul/CMakeFiles/VehiculLibrary.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniela/PAOO_LAB/PAOO/hw1/build/CMakeFiles 0
+.PHONY : src/Vehicul/CMakeFiles/VehiculLibrary.dir/rule
+
+# Convenience name for target.
+VehiculLibrary: src/Vehicul/CMakeFiles/VehiculLibrary.dir/rule
+.PHONY : VehiculLibrary
+
+# clean rule for target.
+src/Vehicul/CMakeFiles/VehiculLibrary.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/Vehicul/CMakeFiles/VehiculLibrary.dir/build.make src/Vehicul/CMakeFiles/VehiculLibrary.dir/clean
+.PHONY : src/Vehicul/CMakeFiles/VehiculLibrary.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

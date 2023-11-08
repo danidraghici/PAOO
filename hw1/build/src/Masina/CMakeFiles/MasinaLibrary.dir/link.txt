@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMasinaLibrary.a CMakeFiles/MasinaLibrary.dir/masini.cpp.o
+/usr/bin/ranlib libMasinaLibrary.a

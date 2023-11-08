@@ -1,8 +1,9 @@
-src/CMakeFiles/MyExecutable.dir/main.cpp.o: \
- /home/daniela/PAOO_LAB/PAOO/hw1/src/main.cpp /usr/include/stdc-predef.h \
+src/Masina/CMakeFiles/MasinaLibrary.dir/masini.cpp.o: \
+ /home/daniela/PAOO_LAB/PAOO/hw1/src/Masina/masini.cpp \
+ /usr/include/stdc-predef.h \
  /home/daniela/PAOO_LAB/PAOO/hw1/src/Masina/masini.hpp \
- /home/daniela/PAOO_LAB/PAOO/hw1/src/Vehicul/vehicul.hpp \
- /home/daniela/PAOO_LAB/PAOO/hw1/src/IVehicul/ivehicul.hpp \
+ /home/daniela/PAOO_LAB/PAOO/hw1/src/Masina/../Vehicul/vehicul.hpp \
+ /home/daniela/PAOO_LAB/PAOO/hw1/src/Masina/../IVehicul/ivehicul.hpp \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -149,4 +150,5 @@ src/CMakeFiles/MyExecutable.dir/main.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc
+ /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/cstring \
+ /usr/include/string.h /usr/include/strings.h

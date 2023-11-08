@@ -3,3 +3,9 @@
 /home/daniela/PAOO_LAB/PAOO/hw1/build/src/CMakeFiles/MyExecutable.dir
 /home/daniela/PAOO_LAB/PAOO/hw1/build/src/CMakeFiles/edit_cache.dir
 /home/daniela/PAOO_LAB/PAOO/hw1/build/src/CMakeFiles/rebuild_cache.dir
+/home/daniela/PAOO_LAB/PAOO/hw1/build/src/Masina/CMakeFiles/MasinaLibrary.dir
+/home/daniela/PAOO_LAB/PAOO/hw1/build/src/Masina/CMakeFiles/edit_cache.dir
+/home/daniela/PAOO_LAB/PAOO/hw1/build/src/Masina/CMakeFiles/rebuild_cache.dir
+/home/daniela/PAOO_LAB/PAOO/hw1/build/src/Vehicul/CMakeFiles/VehiculLibrary.dir
+/home/daniela/PAOO_LAB/PAOO/hw1/build/src/Vehicul/CMakeFiles/edit_cache.dir
+/home/daniela/PAOO_LAB/PAOO/hw1/build/src/Vehicul/CMakeFiles/rebuild_cache.dir
