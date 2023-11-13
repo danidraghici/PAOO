@@ -6,10 +6,12 @@ namespace VehiculNamespace {
     class Vehicul : public IVehicul {
     private:
         bool motor;
+        int numarRoti;
 
     public:
-        Vehicul(bool areMotor);
-        virtual int GetNumarRoti() const = 0; // metoda pur virtuala (nu are implementare concreta)
+        Vehicul(bool areMotor, int numarRoti);
+        int GetNumarRoti() const override;
+        void SetNumarRoti(int numarRoti);
         bool AreMotor() const;
         void SetMotor(bool areMotor);
     };
