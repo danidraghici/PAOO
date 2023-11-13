@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/daniela/PAOO_LAB/PAOO/hw1/build/src/Masina/CMakeFiles/MasinaLibrary.dir/DependInfo.cmake"
   "/home/daniela/PAOO_LAB/PAOO/hw1/build/src/Vehicul/CMakeFiles/VehiculLibrary.dir/DependInfo.cmake"
+  "/home/daniela/PAOO_LAB/PAOO/hw1/build/src/ManagerVehicul/CMakeFiles/ManagerVehiculLibrary.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

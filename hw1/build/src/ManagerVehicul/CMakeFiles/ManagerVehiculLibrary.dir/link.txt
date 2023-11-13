@@ -1,0 +1,2 @@
+/usr/bin/ar qc libManagerVehiculLibrary.a CMakeFiles/ManagerVehiculLibrary.dir/manager_vehicul.cpp.o
+/usr/bin/ranlib libManagerVehiculLibrary.a

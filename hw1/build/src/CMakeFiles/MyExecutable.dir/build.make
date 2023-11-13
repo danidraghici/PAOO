@@ -94,6 +94,7 @@ MyExecutable: src/CMakeFiles/MyExecutable.dir/main.cpp.o
 MyExecutable: src/CMakeFiles/MyExecutable.dir/build.make
 MyExecutable: src/Masina/libMasinaLibrary.a
 MyExecutable: src/Vehicul/libVehiculLibrary.a
+MyExecutable: src/ManagerVehicul/libManagerVehiculLibrary.a
 MyExecutable: src/CMakeFiles/MyExecutable.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/daniela/PAOO_LAB/PAOO/hw1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../MyExecutable"
 	cd /home/daniela/PAOO_LAB/PAOO/hw1/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyExecutable.dir/link.txt --verbose=$(VERBOSE)

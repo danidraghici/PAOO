@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniela/PAOO_LAB/PAOO/hw1/build/CMakeFiles /home/daniela/PAOO_LAB/PAOO/hw1/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/daniela/PAOO_LAB/PAOO/hw1/build/CMakeFiles /home/daniela/PAOO_LAB/PAOO/hw1/build/src/ManagerVehicul//CMakeFiles/progress.marks
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/ManagerVehicul/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniela/PAOO_LAB/PAOO/hw1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/ManagerVehicul/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,70 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/ManagerVehicul/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/ManagerVehicul/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named MyExecutable
+# Convenience name for target.
+src/ManagerVehicul/CMakeFiles/ManagerVehiculLibrary.dir/rule:
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/ManagerVehicul/CMakeFiles/ManagerVehiculLibrary.dir/rule
+.PHONY : src/ManagerVehicul/CMakeFiles/ManagerVehiculLibrary.dir/rule
 
-# Build rule for target.
-MyExecutable: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyExecutable
-.PHONY : MyExecutable
-
-# fast build rule for target.
-MyExecutable/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyExecutable.dir/build.make src/CMakeFiles/MyExecutable.dir/build
-.PHONY : MyExecutable/fast
-
-#=============================================================================
-# Target rules for targets named MasinaLibrary
-
-# Build rule for target.
-MasinaLibrary: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MasinaLibrary
-.PHONY : MasinaLibrary
-
-# fast build rule for target.
-MasinaLibrary/fast:
-	$(MAKE) $(MAKESILENT) -f src/Masina/CMakeFiles/MasinaLibrary.dir/build.make src/Masina/CMakeFiles/MasinaLibrary.dir/build
-.PHONY : MasinaLibrary/fast
-
-#=============================================================================
-# Target rules for targets named VehiculLibrary
-
-# Build rule for target.
-VehiculLibrary: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 VehiculLibrary
-.PHONY : VehiculLibrary
-
-# fast build rule for target.
-VehiculLibrary/fast:
-	$(MAKE) $(MAKESILENT) -f src/Vehicul/CMakeFiles/VehiculLibrary.dir/build.make src/Vehicul/CMakeFiles/VehiculLibrary.dir/build
-.PHONY : VehiculLibrary/fast
-
-#=============================================================================
-# Target rules for targets named ManagerVehiculLibrary
-
-# Build rule for target.
-ManagerVehiculLibrary: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ManagerVehiculLibrary
+# Convenience name for target.
+ManagerVehiculLibrary: src/ManagerVehicul/CMakeFiles/ManagerVehiculLibrary.dir/rule
 .PHONY : ManagerVehiculLibrary
 
 # fast build rule for target.
 ManagerVehiculLibrary/fast:
-	$(MAKE) $(MAKESILENT) -f src/ManagerVehicul/CMakeFiles/ManagerVehiculLibrary.dir/build.make src/ManagerVehicul/CMakeFiles/ManagerVehiculLibrary.dir/build
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f src/ManagerVehicul/CMakeFiles/ManagerVehiculLibrary.dir/build.make src/ManagerVehicul/CMakeFiles/ManagerVehiculLibrary.dir/build
 .PHONY : ManagerVehiculLibrary/fast
+
+manager_vehicul.o: manager_vehicul.cpp.o
+.PHONY : manager_vehicul.o
+
+# target to build an object file
+manager_vehicul.cpp.o:
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f src/ManagerVehicul/CMakeFiles/ManagerVehiculLibrary.dir/build.make src/ManagerVehicul/CMakeFiles/ManagerVehiculLibrary.dir/manager_vehicul.cpp.o
+.PHONY : manager_vehicul.cpp.o
+
+manager_vehicul.i: manager_vehicul.cpp.i
+.PHONY : manager_vehicul.i
+
+# target to preprocess a source file
+manager_vehicul.cpp.i:
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f src/ManagerVehicul/CMakeFiles/ManagerVehiculLibrary.dir/build.make src/ManagerVehicul/CMakeFiles/ManagerVehiculLibrary.dir/manager_vehicul.cpp.i
+.PHONY : manager_vehicul.cpp.i
+
+manager_vehicul.s: manager_vehicul.cpp.s
+.PHONY : manager_vehicul.s
+
+# target to generate assembly for a file
+manager_vehicul.cpp.s:
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(MAKE) $(MAKESILENT) -f src/ManagerVehicul/CMakeFiles/ManagerVehiculLibrary.dir/build.make src/ManagerVehicul/CMakeFiles/ManagerVehiculLibrary.dir/manager_vehicul.cpp.s
+.PHONY : manager_vehicul.cpp.s
 
 # Help Target
 help:
@@ -177,9 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ManagerVehiculLibrary"
-	@echo "... MasinaLibrary"
-	@echo "... MyExecutable"
-	@echo "... VehiculLibrary"
+	@echo "... manager_vehicul.o"
+	@echo "... manager_vehicul.i"
+	@echo "... manager_vehicul.s"
 .PHONY : help
 
 
@@ -191,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/daniela/PAOO_LAB/PAOO/hw1/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
