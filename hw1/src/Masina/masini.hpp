@@ -7,7 +7,7 @@ namespace MasinaNamespace {
     private:
         char* marca;
         int an;
-        int numarRoti;
+        
 
     public:
         Masina(const char* marca, int an, int numarRoti, bool areMotor);
